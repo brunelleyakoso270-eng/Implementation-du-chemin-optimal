@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b81664b7addb2c4766e5be21422ddac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b81664b7addb2c4766e5be21422ddac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b81664b7addb2c4766e5be21422ddac = L.map(
+                "map_9b81664b7addb2c4766e5be21422ddac",
+                {
+                    center: [-4.340794799500401, 15.313745844582911],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e16cb61bb8338196935d782878cf8ac6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e16cb61bb8338196935d782878cf8ac6.addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var marker_1cadebf8ab60c041cd94d6fd0b8d3958 = L.marker(
+                [-4.340794799500401, 15.313745844582911],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_8f2c9f4e1dfacea328fdbde5b355a069 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4891a8ca1cdd9fa86872cd2fda6fb011 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3ea919a378df459a1722b24ad106cbba = $(`<div id="html_3ea919a378df459a1722b24ad106cbba" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="Rond Point Victoire.png" alt="Rond-Point Victoire (DEPART)" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Rond-Point Victoire (DEPART) (S0)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;"> Place des Artistes à Kinshasa. Chemin Vert (5 arrêts) ,Chemin Bleu (7 arrêts).</p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: #666; font-size: 12px; margin: 5px 0;">Rond-Point Victoire (DEPART)</p></div></div>`)[0];
+                popup_4891a8ca1cdd9fa86872cd2fda6fb011.setContent(html_3ea919a378df459a1722b24ad106cbba);
+            
+        
+
+        marker_1cadebf8ab60c041cd94d6fd0b8d3958.bindPopup(popup_4891a8ca1cdd9fa86872cd2fda6fb011)
+        ;
+
+        
+    
+    
+                marker_1cadebf8ab60c041cd94d6fd0b8d3958.setIcon(icon_8f2c9f4e1dfacea328fdbde5b355a069);
+            
+    
+            var marker_0ff16986117f2f6afdf665d1301b1eaf = L.marker(
+                [-4.30124990118881, 15.317523726760912],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_4aae59b2d1e197c4403394ee7eca019c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af278be22dbb5ddddfc556f8e00a4fa8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9e40525146d8080a037fc48f4d7a212c = $(`<div id="html_9e40525146d8080a037fc48f4d7a212c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="gare centrale.png" alt="Gare Centrale (ARRIVEE)" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Gare Centrale (ARRIVEE) (S4)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">La principale gare ferroviaire de Kinshasa.</p>         <hr style="border: 0; border-top: 1px solid #eee;">              <div style="padding: 5px 0;">             <h5 style="color: darkgreen; margin: 5px 0 0; font-weight: bold;">Chemin Rapide (Vert): 18 min 🚀</h5>             <h5 style="color: blue; margin: 5px 0 0;">Chemin Lent (Bleu): 51 min 🔵</h5>             <p style="color: #CC0000; font-size: 11px; margin: 5px 0 0;">Économie de temps : 33 min </p>         </div>         </div></div>`)[0];
+                popup_af278be22dbb5ddddfc556f8e00a4fa8.setContent(html_9e40525146d8080a037fc48f4d7a212c);
+            
+        
+
+        marker_0ff16986117f2f6afdf665d1301b1eaf.bindPopup(popup_af278be22dbb5ddddfc556f8e00a4fa8)
+        ;
+
+        
+    
+    
+                marker_0ff16986117f2f6afdf665d1301b1eaf.setIcon(icon_4aae59b2d1e197c4403394ee7eca019c);
+            
+    
+            var marker_2012c6e79f30b0251f0d8ec75b2a53a4 = L.marker(
+                [-4.338040623238921, 15.305076006120231],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_8fa887f9cad5ed87036ef21e022aed6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed648a5404a04b4635aa070cde3b3c1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0fb28faaa9f9b859c25daf2bcb87e628 = $(`<div id="html_0fb28faaa9f9b859c25daf2bcb87e628" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="Rond point kimpwaza.png" alt="Arrêt Rond point Kimpwaza" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Rond point Kimpwaza (S12)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Nouvel arrêt après le départ, vers Boulevard du 30Juin.</p>         <hr style="border: 0; border-top: 1px solid #eee;">              <div style="display: flex; justify-content: space-around; align-items: center; padding: 5px 0;">                          <div style="text-align: left; font-size: 12px;">                 <p style="margin: 0; color: #666;">Distance:</p>                 <strong style="color: #444;">1.01 km</strong>             </div>                          <i class="fa fa-car" style="font-size: 28px; color: #333;"></i>                           <div style="text-align: right; font-size: 12px;">                 <p style="margin: 0; color: #666;">Temps estimé:</p>                 <strong style="color: #444;">7.00 min</strong>             </div>         </div>         </div></div>`)[0];
+                popup_3ed648a5404a04b4635aa070cde3b3c1.setContent(html_0fb28faaa9f9b859c25daf2bcb87e628);
+            
+        
+
+        marker_2012c6e79f30b0251f0d8ec75b2a53a4.bindPopup(popup_3ed648a5404a04b4635aa070cde3b3c1)
+        ;
+
+        
+    
+    
+                marker_2012c6e79f30b0251f0d8ec75b2a53a4.setIcon(icon_8fa887f9cad5ed87036ef21e022aed6c);
+            
+    
+            var marker_b2214e92023e93426778ea162f77eb32 = L.marker(
+                [-4.323440454236438, 15.306183387831855],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_86a1a9119cd2b18888107cee91633f33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce345bf0dd5251bf9e83671d681a4c2a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6a1129c4eec67c1a3c329624f243f4cb = $(`<div id="html_6a1129c4eec67c1a3c329624f243f4cb" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="Huielerie.jpg" alt="Arrêt Huilerie" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Huilerie (S15)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Arrêt central du Chemin A. Boulevard du 30Juin.</p>         <hr style="border: 0; border-top: 1px solid #eee;">              <div style="display: flex; justify-content: space-around; align-items: center; padding: 5px 0;">                          <div style="text-align: left; font-size: 12px;">                 <p style="margin: 0; color: #666;">Distance:</p>                 <strong style="color: #444;">2.09 km</strong>             </div>                          <i class="fa fa-car" style="font-size: 28px; color: #333;"></i>                           <div style="text-align: right; font-size: 12px;">                 <p style="margin: 0; color: #666;">Temps estimé:</p>                 <strong style="color: #444;">13.00 min</strong>             </div>         </div>         </div></div>`)[0];
+                popup_ce345bf0dd5251bf9e83671d681a4c2a.setContent(html_6a1129c4eec67c1a3c329624f243f4cb);
+            
+        
+
+        marker_b2214e92023e93426778ea162f77eb32.bindPopup(popup_ce345bf0dd5251bf9e83671d681a4c2a)
+        ;
+
+        
+    
+    
+                marker_b2214e92023e93426778ea162f77eb32.setIcon(icon_86a1a9119cd2b18888107cee91633f33);
+            
+    
+            var marker_42786353388ccd345d8b41e70706ad50 = L.marker(
+                [-4.305924247828733, 15.301385286447495],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_ad516150ea0d44254da741a8d2cd7cb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d17fb9a19d3295dddcb9f6aefec55a5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_85e409b0bdcdd8e29eda81905cac99ad = $(`<div id="html_85e409b0bdcdd8e29eda81905cac99ad" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="regideso.jpg" alt="Arrêt Regideso" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Regideso (S13)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Avant-dernier arrêt du Chemin A.</p>         <hr style="border: 0; border-top: 1px solid #eee;">              <div style="display: flex; justify-content: space-around; align-items: center; padding: 5px 0;">                          <div style="text-align: left; font-size: 12px;">                 <p style="margin: 0; color: #666;">Distance:</p>                 <strong style="color: #444;">4.09 km</strong>             </div>                          <i class="fa fa-car" style="font-size: 28px; color: #333;"></i>                           <div style="text-align: right; font-size: 12px;">                 <p style="margin: 0; color: #666;">Temps estimé:</p>                 <strong style="color: #444;">16.00 min</strong>             </div>         </div>         </div></div>`)[0];
+                popup_0d17fb9a19d3295dddcb9f6aefec55a5.setContent(html_85e409b0bdcdd8e29eda81905cac99ad);
+            
+        
+
+        marker_42786353388ccd345d8b41e70706ad50.bindPopup(popup_0d17fb9a19d3295dddcb9f6aefec55a5)
+        ;
+
+        
+    
+    
+                marker_42786353388ccd345d8b41e70706ad50.setIcon(icon_ad516150ea0d44254da741a8d2cd7cb1);
+            
+    
+            var marker_2d553e197fbb8f1f654599336c57c048 = L.marker(
+                [-4.331585879172314, 15.314446591256095],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_c8d41d634f3541091fcc8abd33d011ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0757cec1d24d78cfeb1d43b5d49ac4b6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_04006312923734b9d0252b4a7e81d548 = $(`<div id="html_04006312923734b9d0252b4a7e81d548" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="Pond gaby.png" alt="Pont Gaby" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Pont Gaby (S1)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Premier arrêt du Chemin B (Lent). Le Chemin A le contourne.</p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: blue; font-size: 12px; margin: 5px 0; font-weight: bold;">Arrêt du Chemin B (Lent)</p></div></div>`)[0];
+                popup_0757cec1d24d78cfeb1d43b5d49ac4b6.setContent(html_04006312923734b9d0252b4a7e81d548);
+            
+        
+
+        marker_2d553e197fbb8f1f654599336c57c048.bindPopup(popup_0757cec1d24d78cfeb1d43b5d49ac4b6)
+        ;
+
+        
+    
+    
+                marker_2d553e197fbb8f1f654599336c57c048.setIcon(icon_c8d41d634f3541091fcc8abd33d011ef);
+            
+    
+            var marker_97d2e54f47faaddcf3f0183f4bca40b0 = L.marker(
+                [-4.321978842774812, 15.31186094157827],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_45ca5d3222d42e2426adc7df82b3ca9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ca66f791d528cbea760cd943da6e9f2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5b7f73be0e92ec44b5393658c9ea8a6a = $(`<div id="html_5b7f73be0e92ec44b5393658c9ea8a6a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="lycee kabambare.jpg" alt="Arrêt Kabambare" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Kabambare (S5)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Av.Kasa-Vubu contre Av.Kabambare.</p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: blue; font-size: 12px; margin: 5px 0; font-weight: bold;">Arrêt du Chemin B (Lent)</p></div></div>`)[0];
+                popup_2ca66f791d528cbea760cd943da6e9f2.setContent(html_5b7f73be0e92ec44b5393658c9ea8a6a);
+            
+        
+
+        marker_97d2e54f47faaddcf3f0183f4bca40b0.bindPopup(popup_2ca66f791d528cbea760cd943da6e9f2)
+        ;
+
+        
+    
+    
+                marker_97d2e54f47faaddcf3f0183f4bca40b0.setIcon(icon_45ca5d3222d42e2426adc7df82b3ca9f);
+            
+    
+            var marker_2222760ed10aa931eb97f8e5f2429c85 = L.marker(
+                [-4.318020451877732, 15.325904987217928],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_2c7d974bd38d09a274a94e1f34c29d25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_986fdb2b0a9455d8b8fb56d4a200083c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5c556f18517d05b4f9f23abdd306686b = $(`<div id="html_5c556f18517d05b4f9f23abdd306686b" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="" alt="Arrêt Itaga" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Itaga (S11)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Av.Kabambare Contre Av.Itaga.</p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: blue; font-size: 12px; margin: 5px 0; font-weight: bold;">Arrêt du Chemin B (Lent)</p></div></div>`)[0];
+                popup_986fdb2b0a9455d8b8fb56d4a200083c.setContent(html_5c556f18517d05b4f9f23abdd306686b);
+            
+        
+
+        marker_2222760ed10aa931eb97f8e5f2429c85.bindPopup(popup_986fdb2b0a9455d8b8fb56d4a200083c)
+        ;
+
+        
+    
+    
+                marker_2222760ed10aa931eb97f8e5f2429c85.setIcon(icon_2c7d974bd38d09a274a94e1f34c29d25);
+            
+    
+            var marker_5401a39455d0b484ee4da6f60f123ce3 = L.marker(
+                [-4.310788310982217, 15.323673389325227],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_ffe0b82d69e8ae6077c06ee9092b8b9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14573d0659483752500152e49eea7aae = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_79a066a2839bbe9580dee274bb381734 = $(`<div id="html_79a066a2839bbe9580dee274bb381734" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="" alt="Arrêt Pont du canal " style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Pont du canal  (S6)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Av.Itaga. contre Av.du canal. </p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: blue; font-size: 12px; margin: 5px 0; font-weight: bold;">Arrêt du Chemin B (Lent)</p></div></div>`)[0];
+                popup_14573d0659483752500152e49eea7aae.setContent(html_79a066a2839bbe9580dee274bb381734);
+            
+        
+
+        marker_5401a39455d0b484ee4da6f60f123ce3.bindPopup(popup_14573d0659483752500152e49eea7aae)
+        ;
+
+        
+    
+    
+                marker_5401a39455d0b484ee4da6f60f123ce3.setIcon(icon_ffe0b82d69e8ae6077c06ee9092b8b9e);
+            
+    
+            var marker_a5841f7c42c167ea733f7b9897f5b045 = L.marker(
+                [-4.305139490389958, 15.326430699968544],
+                {
+}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            var icon_6cf3c23ff1d6abaf23ac6de70be9bb11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00f54b13a97d5adf5dc9c82b65cb2a9e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1e7a01b2d698e98566bfff9bbfc47eb7 = $(`<div id="html_1e7a01b2d698e98566bfff9bbfc47eb7" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: Arial, sans-serif; text-align: center; line-height: 1.4;">              <div style="height: 120px; overflow: hidden; margin: -10px -10px 5px -10px; border-radius: 4px 4px 0 0;">             <img src="route poid lourd.jpg" alt="Arrêt Poid Lourd" style="width:100%; height:auto;">         </div>                  <h5 style="margin: 0; padding-bottom: 5px; color: #333;">Arrêt Poid Lourd (S10)</h5>         <p style="margin: 0 0 10px 0; font-size: 11px; color: #666;">Avant-dernier arrêt Av. Kisangani jusqua la gare centrale.</p>         <hr style="border: 0; border-top: 1px solid #eee;">     <p style="color: blue; font-size: 12px; margin: 5px 0; font-weight: bold;">Arrêt du Chemin B (Lent)</p></div></div>`)[0];
+                popup_00f54b13a97d5adf5dc9c82b65cb2a9e.setContent(html_1e7a01b2d698e98566bfff9bbfc47eb7);
+            
+        
+
+        marker_a5841f7c42c167ea733f7b9897f5b045.bindPopup(popup_00f54b13a97d5adf5dc9c82b65cb2a9e)
+        ;
+
+        
+    
+    
+                marker_a5841f7c42c167ea733f7b9897f5b045.setIcon(icon_6cf3c23ff1d6abaf23ac6de70be9bb11);
+            
+    
+            var poly_line_1a47da44cb12df9334dae191f6d538d4 = L.polyline(
+                [[-4.340794799500401, 15.313745844582911], [-4.338040623238921, 15.305076006120231]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_1a47da44cb12df9334dae191f6d538d4.bindTooltip(
+                `<div>
+                     CHEMIN A (5 ARRÊTS) - RAPIDE ! (18 min total)<br>Rond-Point Victoire (DEPART) à Arrêt Rond point Kimpwaza<br>Temps estimé: 7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0a1e3c105b548dfda08a98ebd8ca84df = L.polyline(
+                [[-4.340794799500401, 15.313745844582911], [-4.331585879172314, 15.314446591256095]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_0a1e3c105b548dfda08a98ebd8ca84df.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Rond-Point Victoire (DEPART) à Pont Gaby<br>Temps estimé: 8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_508a6d1afb9075064c5a2282d1630772 = L.polyline(
+                [[-4.338040623238921, 15.305076006120231], [-4.323440454236438, 15.306183387831855]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_508a6d1afb9075064c5a2282d1630772.bindTooltip(
+                `<div>
+                     CHEMIN A (5 ARRÊTS) - RAPIDE ! (18 min total)<br>Arrêt Rond point Kimpwaza à Arrêt Huilerie<br>Temps estimé: 6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f9f752245bf53f531c890db59e34e443 = L.polyline(
+                [[-4.323440454236438, 15.306183387831855], [-4.305924247828733, 15.301385286447495]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_f9f752245bf53f531c890db59e34e443.bindTooltip(
+                `<div>
+                     CHEMIN A (5 ARRÊTS) - RAPIDE ! (18 min total)<br>Arrêt Huilerie à Arrêt Regideso<br>Temps estimé: 3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_14d39bbe657104349ce9e45e34783cd4 = L.polyline(
+                [[-4.305924247828733, 15.301385286447495], [-4.30124990118881, 15.317523726760912]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_14d39bbe657104349ce9e45e34783cd4.bindTooltip(
+                `<div>
+                     CHEMIN A (5 ARRÊTS) - RAPIDE ! (18 min total)<br>Arrêt Regideso à Gare Centrale (ARRIVEE)<br>Temps estimé: 2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_326f814028cb48205631eb40cfd347b6 = L.polyline(
+                [[-4.331585879172314, 15.314446591256095], [-4.321978842774812, 15.31186094157827]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_326f814028cb48205631eb40cfd347b6.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Pont Gaby à Arrêt Kabambare<br>Temps estimé: 10 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bc23674b8bb47419affccac3af9fd37f = L.polyline(
+                [[-4.321978842774812, 15.31186094157827], [-4.318020451877732, 15.325904987217928]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_bc23674b8bb47419affccac3af9fd37f.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Arrêt Kabambare à Arrêt Itaga<br>Temps estimé: 9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1b98faf5d9e392e18992c19d5a327f48 = L.polyline(
+                [[-4.318020451877732, 15.325904987217928], [-4.310788310982217, 15.323673389325227]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_1b98faf5d9e392e18992c19d5a327f48.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Arrêt Itaga à Arrêt Pont du canal <br>Temps estimé: 9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fd342c671cc4904f6883ee95d5606fa4 = L.polyline(
+                [[-4.310788310982217, 15.323673389325227], [-4.305139490389958, 15.326430699968544]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_fd342c671cc4904f6883ee95d5606fa4.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Arrêt Pont du canal  à Arrêt Poid Lourd<br>Temps estimé: 8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_626e83fc3ddecba8a89f593f71c1b4f2 = L.polyline(
+                [[-4.305139490389958, 15.326430699968544], [-4.30124990118881, 15.317523726760912]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9b81664b7addb2c4766e5be21422ddac);
+        
+    
+            poly_line_626e83fc3ddecba8a89f593f71c1b4f2.bindTooltip(
+                `<div>
+                     CHEMIN B (7 ARRÊTS) - LENT (51 min total)<br>Arrêt Poid Lourd à Gare Centrale (ARRIVEE)<br>Temps estimé: 7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
